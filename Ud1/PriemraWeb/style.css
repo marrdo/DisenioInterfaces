@@ -1,0 +1,72 @@
+/*Hay que ponerlo si o si */
+@import url(https://fonts.googleapis.com/css?family=Anuphan:100,200,300,regular,500,600,700);
+/*Roboto chungo*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+*::before::after{
+    box-sizing: border-box;
+}
+body{
+    /*Limitar tamaño basico*/
+    max-width: 60ch;
+    margin: 0 auto;
+    font-family:"Roboto", Arial, Helvetica, sans-serif;
+}
+img{
+    max-width: 100%;
+    
+}
+
+h1{
+    background-color: tomato;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;/*Se usarán los rem para indicar el tamanio*/
+    letter-spacing: 0.5ch;
+    font-family: "Anuphan",Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 0px black;/*No se usa. 0px es ña difuminacion del txto*/
+}
+/*Encabezados en negrecita parecen feos */
+
+h2  {
+    color: tomato;
+    font-weight: 500;
+    text-decoration:  2px wavy underline tomato;/* este se usa por defecto en los hiperenlaces*/
+    font-family:"Anuphan" ,Arial, Helvetica, sans-serif;
+    margin-top: 3rem;
+}
+strong{
+    background-color: rgb(255, 99, 71,0.2);
+    color: red;
+}
+em,a{
+    color: tomato;
+}
+a{
+    background-color: rgb(255, 99, 71,0.2);
+}
+
+pre{
+    background-color: rgb(255, 99, 71,0.2);
+    padding: 1rem;
+}
+
+form{
+    background-color: grey;
+    padding: 1rem;
+}
+input{
+    border: 1px dashed tomato;
+    padding: 0.25rem;
+    width: 15ch;
+    margin-bottom: 1rem;
+}
+input[type='submit']{
+    background-color: tomato;
+    color: #eee;
+    cursor: pointer;/*detractores al pointer*/
+}
+input[type='submit']:hover{
+    background-color: red;
+}
