@@ -7,6 +7,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Crea una página web que contenga un formulario para introducir datos con los siguientes controles:
+
+    Nombre: de tipo texto
+    Apellidos: control de tipo texto
+    Mayor de edad: dos opciones excluyentes Sí o No
+    Correo electrónico: de tipo email
+    Una casilla de verificación con el texto "Deseo recibir información sobre novedades y ofertas"
+    Una casilla de verificación con el texto "He leído y acepto las condiciones y la política de protección de datos"
+    Un botón de envío
+
+Además:
+
+    El título de la página será Ejercicio 1 - formulario.
+    El método de envío del formulario será GET.
+    El campo nombre, apellidos, mayor de edad y la casilla de privacidad será obligatorio que estén rellenas
+    El nombre y el apellido no pueden tener más de 20 caracteres ni menos de 2.
+    La casilla para recibir información debe estar activada por defecto.
+    -->
+    <h1>Ejercicio 1 - formulario</h1>
+
+    <form action="tu_archivo.php" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" minlength="2" maxlength="20" required/><br />
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" minlength="2" maxlength="20" pattern="[A-Za-z ]+" title="Ingresa apellidos válidos (letras y espacios)" required/><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="18" required/><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br />
+
+        <label for="infor">Deseo recibir información sobre novedades y ofertas</label>
+        <input type="checkbox" id="infor" name="infor" checked/><br />
+
+        <label for="terminos">He leído y acepto las condiciones y la política de protección de datos</label>
+        <input type="checkbox" id="terminos" name="terminos" required/><br />
+
+        <input type="submit" value="Enviar" />
+    </form>
 </body>
 </html>
