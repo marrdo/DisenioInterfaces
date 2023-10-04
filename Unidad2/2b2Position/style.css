@@ -1,0 +1,20 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+
+.card{
+    border-radius: 10px;
+    position: absolute;
+    top: 5rem;
+    
+}
+.card-header{
+    background-color: #52c8f2;
+    color: #f9f6f3;
+    padding: 1rem auto;
+}
+.card-body{
+    color: #f9f6f3;
+    background-color: #8a2be2;
+}

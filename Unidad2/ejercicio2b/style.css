@@ -1,0 +1,38 @@
+* ,::before,::after{
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: red;
+    color: whitesmoke;
+}
+#btnEnviar{
+    display: block;
+    width: 100%;
+}
+
+form label{
+    margin-bottom: 1rem;
+}
+form textarea{
+    margin-bottom: 1rem;
+}
+form{
+    background-color: yellow;
+}
+@media (min-width: 500px) {
+    h1{
+        font-weight: 4rem;
+        background-color: blue;
+        color: whitesmoke;
+    }
+    #btnEnviar, textarea{
+        width: 25ch;
+    }
+    body{
+        text-align: center;
+    }
+    form{
+        width: 60ch;
+    }
+}

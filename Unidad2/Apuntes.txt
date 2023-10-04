@@ -1,0 +1,5 @@
+Float solo para mover de derecha o izquierda.
+Lo de meter los cuadros a los lados e smuy tipico, pero meter la forma de circulo de los apuntes, adaptando el texto a la forma es mas llamativo.
+Mirar Stycky para cv en boton contacto.
+Relative desbloquea top right bot left, sirve para eso.Para esto se utiliza transform y translate y sustituye al poition relative.
+

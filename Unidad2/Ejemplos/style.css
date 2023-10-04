@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Margarine:regular);
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Margarine',Arial, Helvetica, sans-serif;
+    max-width: 80ch;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: khaki;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    overflow: auto;/*Barra de scroll*/
+}
+.card img{
+    width: 200px; /*Si se ve mal es por el padding. También se puede usar inherit en vez de os 200
+    para que herede del padre card el ancho.
+    Tmbien se le puede añadir el 100%*/
+}
