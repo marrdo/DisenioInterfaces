@@ -5,29 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaginaLuke</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="principal">
+    <div class="contenedor">
         <header>
-            <nav>
-                <div class="iconoPrincipal">
-                    <figure><svg aria-hidden="true" fill="currentColor" fill-rule="evenodd" focusable="false" role="img"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12zm0-4.836l-4.8-2.4v-12l-2.4 1.2v12l7.2 3.6 7.2-3.6v-4.8l-2.4-1.2 2.4-1.2v-4.8l-7.2-3.6v16.8zm4.8-4.8l-2.4-1.2v4.8l2.4-1.2v-2.4zm0-7.2l-2.4-1.2v4.8l2.4-1.2v-2.4z">
-                            </path>
-                        </svg></figure>
-                </div>
-                <div class="listaNav">
-                    <ul>
-                        <li><button>Home</button></li>
-                        <li><button>Post</button></li>
-                        <li><button>Links</button></li>
-                        <li><button>About</button></li>
-                    </ul>
-                </div>
-                <div class="iconoTemas"><img src="brightness-down.svg" alt=""></div>
+            <nav class="navHeader">
+
+                <figure class="iconoPrincipal">
+                    <svg aria-hidden="true" fill="currentColor" fill-rule="evenodd" focusable="false" role="img"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12zm0-4.836l-4.8-2.4v-12l-2.4 1.2v12l7.2 3.6 7.2-3.6v-4.8l-2.4-1.2 2.4-1.2v-4.8l-7.2-3.6v16.8zm4.8-4.8l-2.4-1.2v4.8l2.4-1.2v-2.4zm0-7.2l-2.4-1.2v4.8l2.4-1.2v-2.4z">
+                        </path>
+                    </svg>
+                </figure>
+
+
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Posts</a></li>
+                    <li><a href="">Links</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+                <figure class="iconoBrillo">
+                    <img src="brightness-down.svg" alt="">
+                </figure>
             </nav>
         </header>
         <main>
@@ -126,9 +130,38 @@
         <footer>
             <h2>Subscribe to my RSS feed</h2>
             <div class="enlaces">
-                <a href=""></a>
-                <a href=""></a>
+                <a href="">JSON Feed</a>
+                <a href="">XML Feed</a>
             </div>
+            <nav class="nav-footer">
+                <ul>
+                    <li><a class="icono-red block rounded text-gray-500 transition-colors duration-200 hover:text-gray-700 focus-visible:outline-none focus-visible:ring-offset-2 focus-visible:ring-2 focus-visible:ring-teal-700 dark:focus-visible:ring-offset-gray-900"
+                            href="https://mastodon.social/@luke_bennett_" rel="me"><span
+                                class="sr-only">Mastodon</span><svg aria-hidden="true" fill="none" focusable="false"
+                                role="img" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4">
+                                <path clip-rule="evenodd"
+                                    d="M11.94.2a4.08 4.08 0 013.5 3.34c.1 1.03.06 2.56.03 3.3v.4l-.03 1.11c-.15 2.46-1.68 3.43-3.3 3.74l-.05.01h-.02c-1.02.2-2.11.26-3.15.29h-.74a13.04 13.04 0 01-3.1-.36.03.03 0 000 .03c.02.33.1.65.2.96.14.36.63 1.21 2.43 1.21a13.27 13.27 0 003.15-.36v1.23a.04.04 0 010 .04c-.33.23-.75.36-1.13.48l-.05.02-.52.14a8.8 8.8 0 01-4.8-.25c-1.44-.5-2.9-1.75-3.27-3.24-.2-.8-.33-1.63-.41-2.45C.6 8.94.57 8.03.54 7.12L.51 6.09c-.04-.87-.02-1.8.17-2.67A4.35 4.35 0 014.48.19C4.82.13 5.54 0 7.86 0h.02c2.63 0 3.76.16 4.06.2zm.96 9.54V5.47c0-.87-.22-1.56-.67-2.08a2.32 2.32 0 00-1.81-.77c-.87 0-1.52.33-1.96 1l-.42.7-.42-.7a2.2 2.2 0 00-1.96-1c-.75 0-1.35.26-1.8.77a3.01 3.01 0 00-.68 2.08v4.27h1.7V5.6c0-.87.36-1.32 1.1-1.32.81 0 1.22.53 1.22 1.57v2.27h1.68V5.85c0-1.04.4-1.57 1.22-1.57.74 0 1.1.45 1.1 1.32v4.14h1.7z"
+                                    fill="currentColor" fill-rule="evenodd"></path>
+                            </svg></a></li>
+                    <li><a class="icono-red block rounded text-gray-500 transition-colors duration-200 hover:text-gray-700 focus-visible:outline-none focus-visible:ring-offset-2 focus-visible:ring-2 focus-visible:ring-teal-700 dark:focus-visible:ring-offset-gray-900"
+                            href="https://twitter.com/luke_bennett_" rel="me"><span class="sr-only">Twitter</span><svg
+                                aria-hidden="true" fill="none" focusable="false" role="img" viewBox="0 0 16 16"
+                                xmlns="http://www.w3.org/2000/svg" class="h-4 w-4">
+                                <path
+                                    d="M16 3.038a6.554 6.554 0 0 1-1.885.517 3.288 3.288 0 0 0 1.443-1.816 6.576 6.576 0 0 1-2.085.796A3.285 3.285 0 0 0 7.88 5.528 9.319 9.319 0 0 1 1.114 2.1a3.287 3.287 0 0 0 1.015 4.383 3.269 3.269 0 0 1-1.486-.41c-.036 1.52 1.054 2.943 2.633 3.26a3.29 3.29 0 0 1-1.483.055 3.285 3.285 0 0 0 3.067 2.28A6.6 6.6 0 0 1 0 13.027 9.293 9.293 0 0 0 5.032 14.5c6.095 0 9.538-5.147 9.33-9.764A6.684 6.684 0 0 0 16 3.038Z"
+                                    fill="currentColor"></path>
+                            </svg></a></li>
+                    <li><a class="icono-red block rounded text-gray-500 transition-colors duration-200 hover:text-gray-700 focus-visible:outline-none focus-visible:ring-offset-2 focus-visible:ring-2 focus-visible:ring-teal-700 dark:focus-visible:ring-offset-gray-900"
+                            href="https://github.com/lukebennett88" rel="me"><span class="sr-only">GitHub</span><svg
+                                aria-hidden="true" fill="none" focusable="false" role="img" viewBox="0 0 16 16"
+                                xmlns="http://www.w3.org/2000/svg" class="h-4 w-4">
+                                <path
+                                    d="M8 0a8 8 0 0 0-2.529 15.591c.4.074.529-.174.529-.384v-1.49c-2.225.484-2.689-.944-2.689-.944-.364-.924-.888-1.17-.888-1.17-.726-.497.055-.486.055-.486.803.056 1.226.824 1.226.824.713 1.223 1.871.87 2.328.665.071-.517.279-.87.508-1.07-1.777-.203-3.645-.889-3.645-3.953 0-.874.313-1.588.824-2.148-.082-.202-.356-1.016.078-2.117 0 0 .672-.215 2.201.82A7.673 7.673 0 0 1 8 3.868c.68.004 1.365.093 2.004.27 1.527-1.035 2.198-.82 2.198-.82.435 1.102.161 1.916.079 2.117.513.56.823 1.274.823 2.148 0 3.072-1.871 3.749-3.653 3.947.287.248.549.735.549 1.481v2.196c0 .212.128.462.534.384A8.002 8.002 0 0 0 8 0Z"
+                                    fill="currentColor"></path>
+                            </svg></a></li>
+                </ul>
+            </nav>
+            <p>© 2023 Luke Bennett. All rights reserved.</p>
         </footer>
     </div>
 </body>
