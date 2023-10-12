@@ -1,0 +1,149 @@
+@import"https://fonts.googleapis.com/css?family=Pacifico&display=swap";
+@import"https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap";
+
+body{
+    background-color: #1e1e2e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*Botones*/
+button{
+    background-color: #1e1e2e;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+.btn-portfolio{
+    border-radius: 3px;
+    border: solid 1.5px #73bba6;
+    color: #73bba6;
+    padding-block: .5rem;
+    height: 100%;
+}
+/*Titulos*/
+h2,h4,.textoIzd{
+    font-family: 'Pacifico',Arial, Helvetica, sans-serif;
+}
+h4{
+    max-width: fit-content;/*Aqui indico el tamaño maximo refiriendome 
+    a que es el ancho de lo que se ha escrito.*/
+    border-bottom: 4px #375a7f solid;
+}
+
+/*Head*/
+header{
+    width: 760px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.textoIzd,.tema,nav{
+    display: flex;
+    align-items: center;
+    
+}
+.textoIzd,nav{
+    flex-grow: 1;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: end;
+    height: 50%;
+    align-items: center;
+}
+li{
+    padding-top: .5rem;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Josefin Sans',Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.tema{
+    width: 5%;
+    display: flex;
+    justify-content: end;
+}
+/*Main*/
+main{
+    width: 760px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 1rem;
+}
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo {
+    display: inline-flex;
+    flex-direction: column;
+
+    
+}
+h2{
+    max-width: fit-content;/*Aqui indico el tamaño maximo refiriendome 
+    a que es el ancho de lo que se ha escrito.*/
+    border-bottom: 4px #375a7f solid;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+.titulo>p{
+    max-width:min-content;/*Aqui indico el tamaño maximo refiriendome 
+    a que es el ancho de lo que se ha escrito.Aqui porque no?*/
+    width: 15%;
+    font-size: .5rem;
+    font-family: 'Josefin Sans',Arial, Helvetica, sans-serif;
+    background-color: #584966;
+    border-radius: .4rem;
+    max-inline-size: 100%;
+    height: .4rem;
+    padding: .5rem .5rem;
+    margin-block: .5rem;
+}
+
+.btn-port{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 2rem;
+   margin-top: 3rem;
+}
+.iconos-Prog{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.iconos-Prog svg{
+    flex-grow: 1;
+    height: 60%;
+    width: fit-content;
+    border-radius: 1rem;
+}
+
+.icon-tabler{
+    background: linear-gradient(45deg, #623697, #1572b6);/*Degradar en diagonal con deg*/
+}
+/*Footer*/
+footer{
+    width: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+footer p{
+    width: 30%;
+    font-size: .7rem;
+}
