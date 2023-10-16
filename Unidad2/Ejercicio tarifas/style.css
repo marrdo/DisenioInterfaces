@@ -1,0 +1,56 @@
+*,::before,::after {
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.cuadroTarifas{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 0.5px #f3ebf0 solid;
+    box-shadow: 6px 6px 10px black;
+    gap: 2rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 700px;
+}
+
+.mensualidad{
+    font-size: .6rem;
+    font-weight: 100;
+}
+
+.tarifa1{
+    border-radius: 1.2rem;
+    color: #030303;
+    background-color: #ffffff;
+    flex-grow: 1;
+    box-shadow: 1px 1px 3px #030303;
+    font-weight: 700;
+    padding: 0 .5rem;
+}
+.tarifa2{
+padding: 0 .5rem;
+flex-grow: 2;
+background-color: #ca3d76;
+color: #f3ebf0;
+border-radius: 1.2rem;
+box-shadow: 1px 1px 3px #030303;
+}
+
+.precio{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.tarifa1>p,.tarifa2>p{
+    margin-bottom: 0.1rem;
+}
