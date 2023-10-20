@@ -1,0 +1,204 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+/*Variables*/
+:root {
+  --font-family-title: "Roboto Condensed", sans-serf;
+  --font-family-letter: "Lato", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #111927;
+  --bg-color2: #1a2332;
+  --resalte-color: #9fef00;
+  --fondo-resalte-color: #27382d;
+  --title-enlace-color: #fff;
+  --letter-color: #8995af;
+  --color-linea: hsl(351, 60%, 38%);
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.2s;
+}
+
+/*Elminacion de propiedades iniciales*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--title-enlace-color);
+}
+
+a:hover {
+  color: var(--resalte-color);
+}
+
+body {
+  font-family: var(--font-family-letter);
+  background-color: var(--bg-color);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-title);
+}
+
+/*Suavizar el scroll*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*NAV superior*/
+nav {
+  position: sticky;
+  top: 0;
+  left: 35%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color2);
+  box-shadow: 2px 3px 10px var(--resalte-color);
+  border-radius: 2rem;
+  width:max-content;
+}
+
+nav a {
+  color: var(--title-enlace-color);
+  transition: var(--transition);
+}
+nav a:hover {
+  color: var(--resalte-color);
+  border-bottom: 2px solid var(--fondo-resalte-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li {
+  font-weight: var(--negrita);
+}
+
+/*Esconder menu hamburguesa*/
+.menu-hamburguesa {
+  color: var(--resalte-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: var(--fondo-resalte-color);
+  cursor: pointer;
+  display: none;
+}
+/*MAIN*/
+
+/*HERO*/
+.hero {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero h1 {
+    font-size: 96px;
+    font-weight: 700;
+    grid-column: 3/7;
+    grid-row: 1/2;
+    text-align: center;
+    color: var(--title-enlace-color);
+}
+
+.hero h2 {
+    font-size: 50px;
+    font-weight: 400;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    text-align: center;
+    color: var(--title-enlace-color);
+}
+
+.hero p {
+    font-size: 40px;
+    font-weight: 300;
+    grid-column: 5/7;
+    grid-row: 2/3;
+    text-align: center;
+    color: var(--letter-color);
+}
+
+.hero h2{
+    
+}
+.hero #heroe {
+  grid-column: 8/9;
+  grid-row: 1/3;
+}
+.hero #portatil {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  width: 380px;
+  height: 380px;
+  margin-left: 1rem;
+  padding-left: 1rem;
+}
+.recorrido{
+    position: relative; /* Establece posición relativa en el contenedor */
+    grid-column: 2/8;
+    grid-row: 1/3;
+    background-color: var(--bg-color);
+    height: 3vh;
+    border-radius: 2rem;
+    overflow: hidden; /* Oculta los círculos que se desborden del contenedor */
+}
+
+.circulo {
+    position: absolute;
+    background-color: var(--color-linea); /* Color de los círculos */
+    width: 50px;
+    height: 20px;
+    border-radius: 50%; /* Para hacerlos círculos */
+    animation: moverCirculo 3s linear infinite; /* Animación de movimiento */
+    animation-delay: 0.5s;
+  }
+  .circulo:nth-child(2){
+    animation-delay: 1s;
+  }
+  .circulo:nth-child(3){
+    animation-delay: 1.5s;
+  }
+  .circulo:nth-child(4){
+    animation-delay: 2s;
+  }
+  .circulo:nth-child(5){
+    animation-delay: 2.5s;
+  }
+  .circulo:nth-child(6){
+    animation-delay: 3s;
+  }
+  /* Animación de movimiento de los círculos */
+@keyframes moverCirculo {
+    0% {
+      left: 100%; /* Comienzan en el extremo derecho del contenedor */
+    }
+    100% {
+      left: -20px; /* Terminan en el extremo izquierdo del contenedor */
+    }
+  }
