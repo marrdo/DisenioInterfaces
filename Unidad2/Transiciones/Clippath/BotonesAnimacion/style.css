@@ -1,0 +1,24 @@
+body{
+    position:relative;
+}
+
+button{
+    position: absolute;
+    z-index: -1;
+    background-color: #357;
+
+}
+
+button::before{
+    background-color: #39c;
+    inset:0; /*top:0;right:0;bottom:0;left:0;*/
+    border-radius: 10px;
+    transition: clip-path 500ms ease;
+    clip-path: circle(0% at 0 0);
+    content: "";
+    
+}
+button:hover{
+    clip-path: circle(100%);
+    background-color: #39c;
+}

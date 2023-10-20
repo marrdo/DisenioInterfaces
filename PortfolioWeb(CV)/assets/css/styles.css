@@ -63,6 +63,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.logo{
+  width: 300px;
+}
 /*NAV superior*/
 nav {
   position: sticky;
