@@ -3,6 +3,12 @@ Verde Hack #9fef00 --> Botones?
 Fondo a los verdes --> #27382d
 azul letras? --> #8995af 
 rojo hack resalte? --> #771e2b
+
+GRADIENTES
+https://cssgradient.io/
+https://paletadecolores.online/mezclar-colores/
+
+
 Pexels apra imagenes gratis
 
 Paginas Favicon: https://toolcool.org/random-favicon-generator, https://favicon.io/favicon-generator/
@@ -12,3 +18,28 @@ Paginas para saber combos: https://fontsinuse.com/typefaces/90008/roboto-condens
 Titulos: Lato, Roboto condensed Titulos
 
 Pagina iconos: https://tabler-icons.io/
+
+En html en contactos vamos a poner las etiqutas con mailto es decir, que se envie el email y llame al telefono.
+<a href="mailto:manuelmaldonado930329@gmail.com">Enviame un correo</a>
+<a href="tel:+34686924893">Contactar por telefono</a>
+
+Usar el tipo input type="tel" para el teleofno en el form
+
+se pueden usar los datalist
+
+<datalist id=languages">
+    <option value="Javascript"></option>
+    <option value="Python"></option>
+    <option value="Java"></option>
+    <option value="C#"></option>
+</datalist>
+<label >Que lenguaje quieres?<input list="languages" name="languages"></label>
+
+
+Cajones de informacion
+
+section
+    details
+        summary Texto que abre la caja summary
+        <p>texto que se ve al abrir la caja</p>
+    details
