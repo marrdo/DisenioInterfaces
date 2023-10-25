@@ -1,0 +1,14 @@
+Tonos claros
+Utilice este color como fondo para sus diseños oscuros sobre claros o el color del texto de un diseño invertido. -->
+
+Acento ligero
+Los colores de acento se pueden utilizar para llamar la atención sobre los elementos de diseño contrastando con el resto de la paleta.-->
+
+Color de marca principal
+Este color debe ser llamativo pero no áspero. Se puede aplicar generosamente a su diseño como identidad principal.-->
+
+acento oscuro
+Otro color de acento a considerar. No es necesario utilizar todos los colores; a veces, una combinación de colores simple funciona mejor.-->
+
+ Dark shades
+Use as the text color for dark-on-light designs, or as the background for inverted designs. -->
