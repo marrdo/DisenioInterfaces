@@ -3,6 +3,9 @@ Verde Hack #9fef00 --> Botones?
 Fondo a los verdes --> #27382d
 azul letras? --> #8995af 
 rojo hack resalte? --> #771e2b
+Paletaclaros:
+
+https://css-animations.io/task/16
 
 GRADIENTES
 https://cssgradient.io/
