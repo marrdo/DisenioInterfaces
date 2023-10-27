@@ -1,10 +1,19 @@
 Degradar como hackbox   #0f1624 --> #151e2d
+bgroundcolor-->#111927
 Verde Hack #9fef00 --> Botones?
 Fondo a los verdes --> #27382d
-azul letras? --> #8995af 
+azul letras? --> #F0ECEE
 rojo hack resalte? --> #771e2b
+titulos:#F8F8F8
 Paletaclaros:
 
+
+colores:
+https://color.adobe.com/es/create/color-wheel
+colormind.io
+https://app.contrast-finder.org/?lang=es contrastes
+
+Animaciones:
 https://css-animations.io/task/16
 
 GRADIENTES
@@ -12,7 +21,7 @@ https://cssgradient.io/
 https://paletadecolores.online/mezclar-colores/
 
 
-Pexels apra imagenes gratis
+Pexels para imagenes gratis
 
 Paginas Favicon: https://toolcool.org/random-favicon-generator, https://favicon.io/favicon-generator/
 
@@ -20,7 +29,7 @@ Tipografias:
 Paginas para saber combos: https://fontsinuse.com/typefaces/90008/roboto-condensed,https://fontjoy.com/
 Titulos: Lato, Roboto condensed Titulos
 
-Pagina iconos: https://tabler-icons.io/
+Pagina iconos: https://tabler-icons.io/,yesicon.app
 
 En html en contactos vamos a poner las etiqutas con mailto es decir, que se envie el email y llame al telefono.
 <a href="mailto:manuelmaldonado930329@gmail.com">Enviame un correo</a>

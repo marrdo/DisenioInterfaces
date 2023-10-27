@@ -11,7 +11,7 @@
     <meta property="og:title" content="Protfolio Manuel Maldonado">
     <meta property="og:description" content="Portfolio de Manuel Maldonado futuro desarrollador web.">
     <meta property="og:image" content="assets/IMAGENES/FOTOCV-min.JPG">
-    
+
     <!--SEO-->
     <!--Para poner la pagina en ingles mas adelante.-->
     <!--<link rel="alternate" href="https://danom.dev/en" hreflang="en-GB">-->
@@ -26,17 +26,18 @@
 
 <body>
     <!-- Barra de Navegación -->
-    <header>
-        <div class="logo"><img src="assets/IMAGENES/LogoFondo-removebg-preview.png" alt=""></div>
+    <header class="general">
+        <div class="logo"><a href="#top"><img src="assets/IMAGENES/LogoFondo-removebg-preview.png"
+                    alt="Logo del desarrollador, DANOM"></a></div>
         <nav>
 
             <ul class="navegacion">
-                <li><a href="#sobremi" class="nav-link">Acerca de Mí</a></li>
+                <li><a href="#acercademi" class="nav-link">Acerca de Mí</a></li>
                 <li><a href="#habilidaes" class="nav-link">Habilidades</a></li>
                 <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
                 <li><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
-            <button class="menu-hamburguesa" id="menu-hamburguesa">
+            <button type="submit" class="menu-hamburguesa" id="menu-hamburguesa">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24"
                     height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
@@ -64,10 +65,10 @@
         </div>
     </header>
     <main>
-        <div class="hero">
+        <section class="hero">
             <h1>Manuel Maldonado</h1>
-            <h2> <span id="full">Full Stack</span> Developer</h2>
-            <p>Passionate about Cybersecurity</p>
+            <h2>Desarrollador <span id="full">Full Stack</span></h2>
+            <p>Apasionado por la Ciberseguridad</p>
             <img src="assets/IMAGENES/PortatilNoBGIzda.png" id="portatil" alt="">
             <div class="recorrido">
                 <div class="circulo"></div>
@@ -79,9 +80,57 @@
             </div>
             <img src="assets/IMAGENES/HeroNOFONDO.png" id="heroe" alt="">
             <!-- Sección Hero  -->
-        </div>
+        </section>
         <!-- Sobre Mí -->
+        <section class="acerca-de-mi" id="acercademi">
+            <header class="head-menu"><h2>Acerca de mí</h2></header>
+            
+            <figure class="foto-cv">
+                <img src="assets/IMAGENES/FOTOCV-min-removebg-preview.png" 
+                alt="Foto de Manuel Maldonado Puerto desarrollador web" 
+                loading="lazy">
+            </figure>
 
+            <section class="descripcion">
+                <h3>¡Hola, soy Manuel!</h3>
+
+                <article class="know-me">
+                    <p>Soy un desarrollador full-stack apasionado por la programación y la resolución de problemas. A lo largo
+                        de mi ciclo formativo de grado superior, he tenido la oportunidad de explorar una amplia variedad de
+                        tecnologías. Esta diversidad me ha permitido descubrir
+                        mi amor por la programación y mi deseo constante de aprender.</p>
+                </article>
+
+                <article class="know-me">
+                    <p>Soy un apasionado de la ciberseguridad y siempre estoy buscando formas de fortalecer la seguridad en
+                        línea. Además de mis habilidades técnicas, me enorgullece mi capacidad para trabajar en equipo y mi
+                        compromiso con el éxito del proyecto. Creo firmemente en la importancia de la colaboración y la
+                        comunicación efectiva.</p>
+                </article>
+
+                <article class="know-me">
+                    <p>Mi objetivo a corto plazo es seguir desarrollándome como un desarrollador full-stack y continuar
+                        explorando nuevas tecnologías. A largo plazo, aspiro a desempeñar un papel en proyectos innovadores que
+                        tengan un impacto significativo en la tecnología y la ciberseguridad.</p>
+                </article>
+            </section>
+            <aside class="animacion-prog">
+                <article class="bash">
+                    <p><code>echo "Hola, soy Manuel!".<span>&#160;</span></code></p>
+                </article>
+                <article class="java">
+                    <p><code>
+                            System.out.println("Hola, soy Manuel!");.<span>&#160;</span></code></p>
+                </article>
+                <article class="js">
+                    <p><code>console.log("Hola, soy Manuel!");.<span>&#160;</span></code></p>
+                </article>
+                <article class="php">
+                    <p><code>&lt;?php echo "Hola, soy Manuel!"; ?&gt;.<span>&#160;</span></code></p>
+                </article>
+            </aside>
+
+        </section>
         <!-- Sección Habilidades -->
 
         <!-- Sección Proyectos -->

@@ -9,19 +9,20 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #111927;
-  --bg-color2: #1a2332;
+  --bg2-color:#394559;
   --resalte-color: #9fef00;
   --fondo-resalte-color: #27382d;
   --title-enlace-color: #fff;
-  --letter-color: #8995af;
-  --color-linea: hsl(351, 60%, 38%);
+  --letter-color: #B2B8C9;
+  --color-linea: #9b2738;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
-  --transition: 0.2s;
+
+  
 }
 
-/*Elminacion de propiedades iniciales*/
+/*Elminacion de propiedades iniciales y caracteristicas generales*/
 *,
 ::before,
 ::after {
@@ -38,20 +39,25 @@ a {
   color: var(--title-enlace-color);
 }
 
-a:hover {
+a:hover,button {
   color: var(--resalte-color);
+  
 }
 
 body {
   font-family: var(--font-family-letter);
   background-color: var(--bg-color);
-  min-height: 200vh;
+  min-height: 500vh;
   position: relative;
 }
 h1,
 h2,
-h3 {
+h3
+{
   font-family: var(--font-family-title);
+  font-size: 3rem;
+  font-weight: var(--bold-font);
+  color: var(--title-enlace-color);
 }
 
 /*Suavizar el scroll*/
@@ -59,8 +65,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/*Header*/
-header {
+/*Header //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.general {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,20 +75,21 @@ header {
   width: 100%;
   z-index: 100;
   padding: 1.5rem;
+  padding-right: 4.8rem;
 }
-
+/*LOGO/////////////////////////////////////////////*/
 .logo img{
   width: 11rem;
 
 }
-/*NAV superior*/
+/*NAV superior////////////////////////////////////////////////*/
 nav {
   /* z-index: 1; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color2);
+  background-color: var(--bg-color);
   box-shadow: 2px 3px 10px var(--resalte-color);
   border-radius: 2rem;
   width:max-content;
@@ -92,7 +99,7 @@ nav a {
   color: var(--title-enlace-color);
   transition: var(--transition);
 }
-nav a:hover {
+nav a:hover{
   color: var(--resalte-color);
   border-bottom: 2px solid var(--fondo-resalte-color);
 }
@@ -105,7 +112,7 @@ nav ul {
 nav ul li {
   font-weight: var(--negrita);
 }
-
+/*/////////////////////////////////////////////////////*/
 .modes{
   height: 68px;
   width: 11rem;
@@ -116,12 +123,22 @@ nav ul li {
 .icon-tabler-sun-moon{
   background-color: var(--fondo-resalte-color);
   color: var(--resalte-color);
+  border-radius: 50%; 
+  width: 80%;
+  height: 80%;
 }
 #modes{
-  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: 3px solid var(--resalte-color);
+  background-color: var(--fondo-resalte-color);
+  border-radius: 70%;
+}
+#modes:hover{
+  cursor:pointer;
 }
 
-/*Esconder menu hamburguesa*/
+/*Esconder menu hamburguesa//////////////////////////////////*/
 .menu-hamburguesa {
   color: var(--resalte-color);
   font-size: 2rem;
@@ -130,12 +147,17 @@ nav ul li {
   cursor: pointer;
   display: none;
 }
-/*MAIN*/
+/*MAIN////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 main{
   padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/*HERO*/
+
+/*HERO///////////////////////////////////////*/
 .hero {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -143,6 +165,7 @@ main{
   justify-content: space-between;
   align-items: center;
   margin-inline: 3rem;
+  height: 90vh;
 }
 
 .hero h1 {
@@ -161,6 +184,14 @@ main{
     grid-row: 2/3;
     text-align: center;
     color: var(--title-enlace-color);
+}
+
+#full{
+  transition: color 0.5s ease-in-out; /* Define la transición con un retraso de 0.3 segundos */
+}
+
+#full:hover{
+color:var(--resalte-color);
 }
 
 .hero p {
@@ -189,7 +220,7 @@ main{
     grid-column: 2/8;
     grid-row: 1/3;
     background-color: var(--bg-color);
-    height: 3vh;
+    height: 4vh;
     border-radius: 2rem;
     overflow: hidden; /* Oculta los círculos que se desborden del contenedor */
 }
@@ -226,3 +257,164 @@ position: absolute;    background-color: var(--color-linea); /* Color de los cí
       left: -20px; /* Terminan en el extremo izquierdo del contenedor */
     }
   }
+
+  /*SOBRE MI//////////////////////////////*/
+
+  .acerca-de-mi{
+    width: 90%;
+    background-color: var(--bg2-color);
+    border-radius: 3rem;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+    margin-top: 7rem;
+  }
+
+  /*header section acerca de mi*/
+  .head-menu{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+
+  }
+
+/*Imagen CV*/
+.foto-cv{
+  grid-column: 1/2;
+  grid-row: 2/6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  min-width: fit-content;
+}
+.foto-cv img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.descripcion{
+  grid-column: 2/3;
+  grid-row: 2/6;
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+}
+
+.descripcion h3{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.know-me{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+padding-inline: 2rem;
+}
+.know-me p{
+  width: 80ch;
+  color:#CCFDC6;
+  font-size: 1.1rem;
+  font-family: var(--font-family-letter);
+}
+/*ASIDE///////////////////////////////////////////////////////////////////////////////////*/
+.animacion-prog{
+  grid-column: 3/4;
+  grid-row: 2/6;
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  
+}
+
+.bash {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.bash code, .java code, .js code, .php code{
+  position: relative;
+  color:var(--letter-color);
+  font-size: .9rem;
+}
+.bash span{
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 20px;
+  background-color: var(--bg2-color);
+  border-left: 2px solid var(--resalte-color);
+  animation:typing 10s steps(25) 3,
+  blink .5s infinite step-end alternate;
+}
+
+.java{
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.java span{
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 20px;
+  background-color: var(--bg2-color);
+  border-left: 2px solid var(--resalte-color);
+  animation:typing 10s steps(34) 3,
+  blink .5s infinite step-end alternate;
+}
+.js{
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.js span{
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 20px;
+  background-color: var(--bg2-color);
+  border-left: 2px solid var(--resalte-color);
+  animation:typing 10s steps(30) 3,
+  blink .5s infinite step-end alternate;
+}
+.php{
+  grid-row: 4/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.php span{
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 20px;
+  background-color: var(--bg2-color);
+  border-left: 2px solid var(--resalte-color);
+  animation:typing 10s steps(28) 3,
+  blink .5s infinite step-end alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*PRUEBAAAAAAAAAAAAAAAAAAAAA*/
