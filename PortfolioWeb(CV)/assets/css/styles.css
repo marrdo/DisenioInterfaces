@@ -269,6 +269,7 @@ position: absolute;    background-color: var(--color-linea); /* Color de los cí
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: repeat(5,1fr);
     margin-top: 7rem;
+    overflow: scroll;
   }
 
   /*header section acerca de mi*/
@@ -417,4 +418,35 @@ padding-inline: 2rem;
   }
 }
 
-/*PRUEBAAAAAAAAAAAAAAAAAAAAA*/
+/*Habilidades////////////////////////////////////////////////////////////////*/
+
+.habilidades{
+  margin-top: 7rem;
+  padding: 2rem;
+  background-color: var(--bg2-color);
+  border-radius: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
+  height: 80vh;
+  width: 90vw;
+  overflow: hidden;
+}
+
+.skills, .soft_skill, .tools-dev{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img{
+    width: 50px;
+    height: 50px;
+  }
+  
+}
+
+td{
+  border: 1px solid #000; /* Agrega bordes a las celdas */
+  padding: 5px; /* Agrega espacio interno a las celdas */
+  text-align: center;
+  margin: 4rem;
+}
