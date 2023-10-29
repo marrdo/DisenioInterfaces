@@ -51,40 +51,238 @@ h3 {
 html {
   scroll-behavior: smooth;
 }
-@media screen and (max-width: 1730px) {
-    .hero h1 {
-        font-size: 4rem;
-        font-weight: 700;
-        grid-column: 3/7;
-        grid-row: 1/2;
-        text-align: center;
-        color: var(--title-enlace-color);
-    }
-    
-    .hero h2 {
-        font-size: 3rem;
-        font-weight: 400;
-        grid-column: 3/5;
-        grid-row: 2/3;
-        text-align: center;
-        color: var(--title-enlace-color);
-    }
 
-    .hero p {
-        font-size: 2remp;
-        font-weight: 300;
-        grid-column: 5/7;
-        grid-row: 2/3;
-        text-align: center;
-        color: var(--letter-color);
-    }
+@media screen and (max-width: 1747px) {
+  .ciclo h3 {
+    font-size: 2rem;
+  }
+  .mimismo h3 {
+    font-size: 2rem;
+  }
 }
-/*///////////////////MEDIAAA////////////////////////////////*/
-@media screen and (max-width: 720px) {
-  .hidden {
+
+@media screen and (max-width: 1730px) {
+  /*HEADEEEEEERRR///////////*/
+  .hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    grid-column: 3/7;
+    grid-row: 1/2;
+    text-align: center;
+    color: var(--title-enlace-color);
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    grid-column: 2/5;
+    grid-row: 2/3;
+    text-align: center;
+    color: var(--title-enlace-color);
+  }
+
+  .hero p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    grid-column: 5/8;
+    grid-row: 2/3;
+    text-align: center;
+    color: var(--letter-color);
+  }
+
+  /*SOBRE MIII////////////////////*/
+
+  .know-me p {
+    width: 60ch;
+    color: var(--letter-color);
+    font-size: 0.9rem;
+    font-family: var(--font-family-letter);
+  }
+}
+/*1551///////////////////////ANIMACIONEEEEE*/
+@media screen and (max-width: 1551px) {
+  .php span {
+    left: 1rem;
+    animation: blink 0.5s infinite step-end alternate;
+  }
+  .ides {
+    flex-wrap: wrap;
+  }
+}
+/*1434 ////////////ANIMACIONEEEEE*/
+@media screen and (max-width: 1434px) {
+  .java span {
     display: none;
   }
 
+  .php span {
+    display: none;
+  }
+}
+
+/**/
+/*1369 ///////////////MEDIAAAAAAAAAAA*/
+@media screen and (max-width: 1369px) {
+  /*MAIN///////////////////////////////////////////////*/
+  /*HEROOOOO**/
+  .hero {
+    margin: 0;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero #portatil {
+    height: 15rem;
+    width: 15rem;
+  }
+  #heroe {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  /*SOBRE MIIII*/
+}
+/*1194 ANIMACIONMEEES*/
+@media screen and (max-width: 1194px) {
+  .js span {
+    display: none;
+  }
+}
+/*1178 ANIMACIONEEEES*/
+@media screen and (max-width: 1178px) {
+  .bash span {
+    display: none;
+  }
+  .know-me p {
+    width: 40ch;
+    padding: 1rem;
+  }
+
+  /*SKILLLL//////////////////*/
+  .tools-dev {
+    display: flex;
+    padding: 2rem;
+    transition: all 0.5s ease-in;
+    transform: scale(1);
+    justify-content: center;
+    align-items: baseline;
+  }
+  .versiones {
+    flex-direction: column;
+  }
+}
+
+/*1120*/
+@media screen and (max-width: 1120px) {
+  .habilidades {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+  }
+
+  .tools-dev {
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+  .versiones {
+    flex-direction: row;
+  }
+}
+/*956 MEDIAA*/
+@media screen and (max-width: 956px) {
+  /*HEADEEEEEERRR///////////*/
+  .logo {
+    margin-left: 1, 6rem;
+  }
+  .logo img {
+    width: 5.5rem;
+  }
+
+  nav {
+    width: fit-content;
+  }
+  .modes {
+    height: 50px;
+    width: 6.5rem;
+  }
+  /*ANIMACIONES*/
+  .animacion-prog {
+    display: none;
+  }
+  /*SOBRE MIIII*/
+  .acerca-de-mi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .head-menu {
+    height: 5rem;
+  }
+  .foto-cv {
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+/*880 MEDIAA*/
+@media screen and (max-width: 880px) {
+  /*HEADEEEEEERRR///////////*/
+  .logo {
+    margin-left: 0.1rem;
+  }
+  .hiddenMod {
+    display: none;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .hero h1 {
+    grid-column: 2/8;
+  }
+  .hero h2 {
+    grid-column: 2/8;
+    grid-row: 3/4;
+  }
+  .hero p {
+    grid-column: 2/8;
+    grid-row: 4/5;
+  }
+  #heroe {
+    grid-column: 8/9;
+    grid-row: 3/3;
+    margin-top: 12rem;
+  }
+  #portatil {
+    grid-column: 1/2;
+    grid-row: 3/3;
+    margin-top: 12rem;
+  }
+  .recorrido {
+    grid-column: 2/8;
+    grid-row: 2/3;
+    height: 2vh;
+  }
+  .circulo {
+    height: 0.5rem;
+    width: 1.25rem;
+  }
+
+  .circulo:nth-child(6) {
+    animation-delay: 3s;
+    display: none;
+  }
+}
+
+/*///////////////////MEDIAAA////////////////////////////////*/
+@media screen and (max-width: 720px) {
   /*/////////////////////HEADERRRRRR/////////////////////////*/
 
   .general {
@@ -97,10 +295,17 @@ html {
     z-index: 10;
   }
   nav {
-    padding: 1.5rem 1rem;
+    padding: 0.5rem 0.5rem;
   }
 
-  nav ul {
+  nav ul li {
+    margin: 8px;
+  }
+  .menu-hamburguesa {
+    display: block;
+  }
+
+  .navegacion {
     position: fixed;
     background-color: var(--bg-color);
     flex-direction: column;
@@ -112,14 +317,107 @@ html {
     transition: transform 0.5s ease-in;
   }
 
-  nav ul li {
-    margin: 8px;
-  }
-  .menu-hamburguesa {
-    display: block;
-  }
-
-  nav ul.show {
+  .navegacion.show {
     transform: translateX(0);
   }
+
+  /*MAIINN/////////////*/
+
+  /*HEEEERRRROOOOOOOO*/
+  .hero {
+    margin-top: 1rem;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #heroe {
+    margin-top: 2rem;
+  }
+  #portatil {
+    display: none;
+  }
+  .recorrido {
+    display: none;
+  }
+  .circulo {
+    display: none;
+  }
+
+  .circulo:nth-child(6) {
+    animation-delay: 3s;
+    display: none;
+  }
+
+  .habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .versiones {
+    flex-direction: column;
+  }
+
+  textarea {
+    min-height: 6.25rem;
+    min-width: 30ch;
+  }
+  .submit-btn {
+    width: 7.5rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .acerca-de-mi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .foto-cv {
+    display: none;
+  }
+  .descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .saludo {
+    text-align: center;
+  }
+
+.general{
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: transparent;
+  z-index: 100;
+  padding: 1.5rem;
+  padding-right: 4.8rem;
+}
+
+.navegacion {
+  position: fixed;
+  background-color: var(--bg-color);
+  flex-direction: column;
+  top: 86px;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+  transform: translateX(120%);
+  transition: transform 0.5s ease-in;
+}
+
+.navegacion.show {
+  transform: translateX(0);
+}
 }

@@ -50,7 +50,7 @@
                 </svg>
             </button>
         </nav>
-        <div class="modes">
+        <div class="modes hiddenMod">
             <button id="modes">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun-moon" width="36"
                     height="36" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -85,34 +85,40 @@
         </section>
         <!-- Sobre Mí -->
         <section class="acerca-de-mi" id="acercademi">
-            <header class="head-menu"><h2>Acerca de mí</h2></header>
-            
+            <header class="head-menu">
+                <h2>Acerca de mí</h2>
+            </header>
+
             <figure class="foto-cv">
-                <img src="assets/IMAGENES/FOTOCV-min-removebg-preview.png" 
-                alt="Foto de Manuel Maldonado Puerto desarrollador web" 
-                loading="lazy">
+                <img src="assets/IMAGENES/FOTOCV-min-removebg-preview.png"
+                    alt="Foto de Manuel Maldonado Puerto desarrollador web" loading="lazy">
             </figure>
 
             <section class="descripcion">
-                <h3>¡Hola, soy Manuel!</h3>
+                <h3 class="saludo">¡Hola, soy Manuel!</h3>
 
                 <article class="know-me">
-                    <p>Soy un desarrollador full-stack apasionado por la programación y la resolución de problemas. A lo largo
-                        de mi ciclo formativo de grado superior, he tenido la oportunidad de explorar una amplia variedad de
+                    <p>Soy un desarrollador full-stack apasionado por la programación y la resolución de problemas. A lo
+                        largo
+                        de mi ciclo formativo de grado superior, he tenido la oportunidad de explorar una amplia
+                        variedad de
                         tecnologías. Esta diversidad me ha permitido descubrir
                         mi amor por la programación y mi deseo constante de aprender.</p>
                 </article>
 
                 <article class="know-me">
-                    <p>Soy un apasionado de la ciberseguridad y siempre estoy buscando formas de fortalecer la seguridad en
-                        línea. Además de mis habilidades técnicas, me enorgullece mi capacidad para trabajar en equipo y mi
+                    <p>Soy un apasionado de la ciberseguridad y siempre estoy buscando formas de fortalecer la seguridad
+                        en
+                        línea. Además de mis habilidades técnicas, me enorgullece mi capacidad para trabajar en equipo y
+                        mi
                         compromiso con el éxito del proyecto. Creo firmemente en la importancia de la colaboración y la
                         comunicación efectiva.</p>
                 </article>
 
                 <article class="know-me">
                     <p>Mi objetivo a corto plazo es seguir desarrollándome como un desarrollador full-stack y continuar
-                        explorando nuevas tecnologías. A largo plazo, aspiro a desempeñar un papel en proyectos innovadores que
+                        explorando nuevas tecnologías. A largo plazo, aspiro a desempeñar un papel en proyectos
+                        innovadores que
                         tengan un impacto significativo en la tecnología y la ciberseguridad.</p>
                 </article>
             </section>
@@ -138,165 +144,165 @@
             <header class="head-menu-skill">
                 <h2>Habilidades</h2>
             </header>
-            
-                <article class="skills">
-                    <!--Skills en prog, herramientas como vscode y eclipse para el funcionamiento-->
-                    <div class="ciclo">
-                        <h3>Ciclo formativo</h3>
-                        <figure class="icon-java"><img src="assets/ICONOS/prog/java.svg" alt=""><figcaption>Java</figcaption></figure>
-                        <figure class="icon-html"><img src="assets/ICONOS/prog/html.svg" alt=""><figcaption>HTML</figcaption></figure>
-                        <figure class="icon-css"><img src="assets/ICONOS/prog/css.svg" alt=""><figcaption>CSS</figcaption></figure>
-                        <figure class="icon-js"><img src="assets/ICONOS/prog/js.svg" alt=""><figcaption>Javascript</figcaption></figure>
-                        <figure class="icon-php"><img src="assets/ICONOS/prog/php.svg" alt=""><figcaption>PHP</figcaption></figure>
+
+            <article class="skills">
+                <!--Skills en prog, herramientas como vscode y eclipse para el funcionamiento-->
+                <div class="ciclo">
+                    <h3>Ciclo formativo</h3>
+                    <figure class="icon-java"><img src="assets/ICONOS/prog/java.svg" alt="">
+                        <figcaption>Java</figcaption>
+                    </figure>
+                    <figure class="icon-html"><img src="assets/ICONOS/prog/html.svg" alt="">
+                        <figcaption>HTML</figcaption>
+                    </figure>
+                    <figure class="icon-css"><img src="assets/ICONOS/prog/css.svg" alt="">
+                        <figcaption>CSS</figcaption>
+                    </figure>
+                    <figure class="icon-js"><img src="assets/ICONOS/prog/js.svg" alt="">
+                        <figcaption>Javascript</figcaption>
+                    </figure>
+                    <figure class="icon-php"><img src="assets/ICONOS/prog/php.svg" alt="">
+                        <figcaption>PHP</figcaption>
+                    </figure>
+                </div>
+                <div class="mimismo">
+                    <h3>Autodidacta</h3>
+                    <figure class="icon-powershell"><img src="assets/ICONOS/prog/powershell.png" alt="">
+                        <figcaption>Powershell</figcaption>
+                    </figure>
+                    <figure class="icon-bash"><img src="assets/ICONOS/prog/bash.svg" alt="">
+                        <figcaption>Bash</figcaption>
+                    </figure>
+                    <figure class="icon-python"><img src="assets/ICONOS/prog/python.svg" alt="">
+                        <figcaption>Python</figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="soft_skill">
+                <!--kikoPalomares-->
+                <table class="soft-skills">
+                    <tr>
+                        <th colspan="2">Habilidades Personales/Soft skills</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cell-content">Comunicación efectiva</div>
+                            <div class="confirmar">✔</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cell-content">Trabajo en equipo</div>
+                            <div class="confirmar">✔</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cell-content">Autodidacta</div>
+                            <div class="confirmar">✔</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cell-content">Proactivo</div>
+                            <div class="confirmar">✔</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cell-content">Adaptación al cambio</div>
+                            <div class="confirmar">✔</div>
+                        </td>
+                    </tr>
+                </table>
+
+            </article>
+            <article class="tools-dev">
+                <div class="ide">
+                    <h3>IDE's</h3>
+                    <div class="ides">
+                        <figure><img src="assets/ICONOS/prog/eclipse.svg" alt="">
+                            <figcaption>Eclipse</figcaption>
+                        </figure>
+                        <figure><img src="assets/ICONOS/prog/vscode.svg" alt="">
+                            <figcaption>Visual Studio Code</figcaption>
+                        </figure>
+                        <figure><img src="assets/ICONOS/prog/pycharm_original_logo_icon_146385.ico" alt="">
+                            <figcaption>Pycharm</figcaption>
+                        </figure>
+                        <figure><img src="assets/ICONOS/prog/icons8-texto-sublime.svg" alt="">
+                            <figcaption>SublimeText</figcaption>
+                        </figure>
                     </div>
-                    <div class="mimismo">
-                        <h3>Autodidacta</h3>
-                        <figure class="icon-powershell"><img src="assets/ICONOS/prog/powershell.png" alt=""><figcaption>Powershell</figcaption></figure>
-                        <figure class="icon-bash"><img src="assets/ICONOS/prog/bash.svg" alt=""><figcaption>Bash</figcaption></figure>
-                        <figure class="icon-python"><img src="assets/ICONOS/prog/python.svg" alt=""><figcaption>Python</figcaption></figure>
+                </div>
+                <div class="versions">
+                    <h3>Control de versiones</h3>
+                    <div class="versiones">
+                        <figure><img src="assets/ICONOS/prog/git.svg" alt="">
+                            <figcaption>GIT</figcaption>
+                        </figure>
+                        <figure><img src="assets/ICONOS/prog/github.svg" alt="">
+                            <figcaption>GIT-HUB</figcaption>
+                        </figure>
                     </div>
-                </article>
-                <article class="soft_skill">
-                    <!--kikoPalomares-->
-                    <table class="soft-skills">
-                        <tr>
-                            <th colspan="2">Habilidades Personales/Soft skills</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="cell-content">Comunicación efectiva</div>
-                              <div class="confirmar">✔</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="cell-content">Trabajo en equipo</div>
-                              <div class="confirmar">✔</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="cell-content">Autodidacta</div>
-                              <div class="confirmar">✔</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="cell-content">Proactivo</div>
-                              <div class="confirmar">✔</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="cell-content">Adaptación al cambio</div>
-                              <div class="confirmar">✔</div>
-                            </td>
-                          </tr>
-                      </table>
-                
-                </article>
-                <article class="tools-dev">
-                    <div class="ide">
-                        <h3>IDE's</h3>
-                        <div class="ides">
-                            <figure><img src="assets/ICONOS/prog/eclipse.svg" alt=""><figcaption>Eclipse</figcaption></figure>
-                            <figure><img src="assets/ICONOS/prog/vscode.svg" alt=""><figcaption>Visual Studio Code</figcaption></figure>
-                            <figure><img src="assets/ICONOS/prog/pycharm_original_logo_icon_146385.ico" alt=""><figcaption>Pycharm</figcaption></figure>
-                            <figure><img src="assets/ICONOS/prog/icons8-texto-sublime.svg" alt=""><figcaption>SublimeText</figcaption></figure>
-                        </div>
-                    </div>
-                    <div class="versions">
-                        <h3>Control de versiones</h3>
-                        <div class="versiones">
-                            <figure><img src="assets/ICONOS/prog/git.svg" alt=""><figcaption>GIT</figcaption></figure>
-                            <figure><img src="assets/ICONOS/prog/github.svg" alt=""><figcaption>GIT-HUB</figcaption></figure>
-                        </div>
-                    </div>
-                </article>
-            
+                </div>
+            </article>
+
         </section>
         <!-- Sección Proyectos Está aparte-->
 
         <!-- Sección Contacto-->
         <section class="contacto" id="contacto">
             <h2>Contactame</h2>
-                <form action="index.php" method="POST">
-                  
-                    <label for="name">Nombre<input
-                        type="text"
-                        id="name"
-                        name="sender-name"
-                        placeholder="Escribe tu nombre"
-                        class="input-field"
-                        required
-                      /></label>
-                    
-                  
-                  
-                    <label for="email">Correo Electrónico <input
-                        type="email"
-                        id="email"
-                        name="sender-email"
-                        placeholder="Ingresa tu correo electrónico"
-                        class="input-field"
-                        required
-                      /></label>
-                    
-                    <label for="mensaje">Mensaje</label>
-                    <textarea
-                        id="mensaje"
-                        cols="60"
-                        rows="12"
-                        placeholder="Escribe tu mensaje"
-                        name="mensaje"
-                        class="input-field"
-                        required
-                      ></textarea>
-                  
-                  <input
-                    type="submit"
-                    value="Enviar"
-                    id="submit-btn"
-                    class="submit-btn"
-                  />
-                </form>
-                
-          </section>
-      
+            <form action="index.php" method="POST">
+
+                <label for="name">Nombre<input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre"
+                        class="input-field" required /></label>
+
+
+
+                <label for="email">Correo Electrónico <input type="email" id="email" name="sender-email"
+                        placeholder="Ingresa tu correo electrónico" class="input-field" required /></label>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="60" rows="12" placeholder="Escribe tu mensaje" name="mensaje"
+                    class="input-field" required></textarea>
+
+                <input type="submit" value="Enviar" id="submit-btn" class="submit-btn" />
+            </form>
+
+        </section>
+
     </main>
 
     <!-- Sección de redes sociales - Fijado a la derecha -->
     <section class="sociales">
-        <a href="#" target="_blank"
-          ><img
-            src="assets/IMAGENES/wasa.gif"
-            alt="Whatsapp"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="#" target="_blank"
-          ><img
-            src="assets/IMAGENES/discord.gif"
-            alt="Discord"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="#" target="_blank"
-          ><img
-            src="assets/IMAGENES/linkedin.gif"
-            alt="Linkedin"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="#" target="_blank"
-          ><img src="assets/IMAGENES/github2.gif" 
-          alt="Github" 
-          class="socicon github"
-        /></a>
+        <a href="#" target="_blank"><img src="assets/IMAGENES/wasa.gif" alt="Whatsapp" loading="lazy"
+                class="socicon" /></a>
+        <a href="#" target="_blank"><img src="assets/IMAGENES/discord.gif" alt="Discord" loading="lazy"
+                class="socicon" /></a>
+        <a href="#" target="_blank"><img src="assets/IMAGENES/linkedin.gif" alt="Linkedin" loading="lazy"
+                class="socicon" /></a>
+        <a href="#" target="_blank"><img src="assets/IMAGENES/github2.gif" alt="Github" class="socicon github" /></a>
     </section>
-    <!-- Vuelve al comienzo  -->
+
 
     <!-- Sección Footer  -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h4>Contacto</h4>
+                <p>Correo: <a href="m.maldonado.puerto@iescristobaldemonroy.es">m.maldonado.puerto@iescristobaldemonroy.es</a></p>
+                <p>Teléfono: <a href="tel:+1234567890">+34 123 456 789</a></p>
+            </div>
+
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 danom.dev. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
