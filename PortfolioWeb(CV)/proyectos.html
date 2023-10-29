@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <!--Si usamos enlaces externos usar rel="noreferrer" para que no se envie a a pag mas info de lo que necesita-->
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="assets/css/styles.css" />
-     <link rel="stylesheet" href="assets/css/styles-moviles.css">
-     <link rel="shortcut icon" href="assets/ICONOS/favicon_io/favicon-32x32.png" type="image/x-icon">
-     <!--Opengraphy-->
-     <meta property="og:title" content="Protfolio Manuel Maldonado">
-     <meta property="og:description" content="Portfolio de Manuel Maldonado futuro desarrollador web.">
-     <meta property="og:image" content="assets/IMAGENES/FOTOCV-min.JPG">
- 
-     <!--SEO-->
-     <!--Para poner la pagina en ingles mas adelante.-->
-     <!--<link rel="alternate" href="https://danom.dev/en" hreflang="en-GB">-->
-     <!--Vamos a redireccionar de www.danom.dev -> danom.dev-->
-     <link rel="canonical" href="https://danom.dev">
-     <meta name="robots" content="index,follow">
-     <meta name="theme-color" content="#0f1624">
-     <meta name="description" content="Portfolio Manuel Maldonado, futuro desarrollador web fullstack.">
-     <title>Manuel Maldonado Puerto Web developer portfolio</title>
-     <script defer src="assets/js/code.js"></script>
+    <!--Si usamos enlaces externos usar rel="noreferrer" para que no se envie a a pag mas info de lo que necesita-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles-moviles.css">
+    <link rel="shortcut icon" href="assets/ICONOS/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <!--Opengraphy-->
+    <meta property="og:title" content="Protfolio Manuel Maldonado">
+    <meta property="og:description" content="Portfolio de Manuel Maldonado futuro desarrollador web.">
+    <meta property="og:image" content="assets/IMAGENES/FOTOCV-min.JPG">
+
+    <!--SEO-->
+    <!--Para poner la pagina en ingles mas adelante.-->
+    <!--<link rel="alternate" href="https://danom.dev/en" hreflang="en-GB">-->
+    <!--Vamos a redireccionar de www.danom.dev -> danom.dev-->
+    <link rel="canonical" href="https://danom.dev">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#0f1624">
+    <meta name="description" content="Portfolio Manuel Maldonado, futuro desarrollador web fullstack.">
+    <title>Manuel Maldonado Puerto Web developer portfolio</title>
+    <script defer src="assets/js/codeburguer.js"></script>
 </head>
+
 <body>
     <header class="general">
-        <div class="logo"><a href="#top"><img src="assets/IMAGENES/LogoFondo-removebg-preview.png"
+        <div class="logo"><a href="index.html"><img src="assets/IMAGENES/LogoFondo-removebg-preview.png"
                     alt="Logo del desarrollador, DANOM"></a></div>
         <nav>
 
             <ul class="navegacion">
-                <li><a href="#acercademi" class="nav-link">Acerca de Mí</a></li>
-                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="index.html#acercademi" class="nav-link">Acerca de Mí</a></li>
+                <li><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#top" class="nav-link">Proyectos</a></li>
+                <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
             </ul>
             <button type="submit" class="menu-hamburguesa" id="menu-hamburguesa">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24"
@@ -63,14 +65,54 @@
         </div>
     </header>
     <main>
-        
+        <section class="proyectos" id="proyectos">
+            <h2 class="titulo-de-proyectos">Algunos de mis proyectos recientes</h2>
+            <div class="contenedor-de-proyectos">
+                <div class="contenedor-de-proyectos tarjeta-de-proyectos">
+                    <img src="assets/IMAGENES/Proyectos/card-login.png" alt="rastreador-de-gastos" loading="lazy"
+                        class="project-pic" />
+                    <h3 class="titulo-de-proyectos">Diseño de carta</h3>
+                    <p class="detalle-de-proyectos">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                        ratione vel inventore labore commodi modi quos culpa aut saepe!
+                        Alias!
+                    </p>
+                    <a href="#" target="_blank" class="enlace-de-proyecto">Check it Out</a>
+                </div>
+                <div class="contenedor-de-proyectos tarjeta-de-proyectos ">
+                    <img src="assets/IMAGENES/Proyectos/Diseño_cartas_juego.png" alt="netflic-clone" loading="lazy"
+                        class="project-pic" />
+                    <h3 class="titulo-proyecto">Cartas de juego Pokemon</h3>
+                    <p class="detalles-proyecto">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                        ratione vel inventore labore commodi modi quos culpa aut saepe!
+                        Alias!
+                    </p>
+                    <a href="#" target="_blank" class="project-link">Check it Out</a>
+                </div>
+                <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+                    <img src="assets/IMAGENES/Proyectos/estadioPokemon1.png" alt="greeny-earth" loading="lazy"
+                        class="project-pic" />
+                    <h3 class="titulo-de-proyecto">Tablero Pokemon</h3>
+                    <p class="detalles-de-proyecto">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                        ratione vel inventore labore commodi modi quos culpa aut saepe!
+                        Alias!
+                    </p>
+                    <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
+                </div>
+            </div>
+        </section>
+
     </main>
-     <!-- Sección Footer  -->
-     <footer>
+    <!-- Sección Footer  -->
+    <footer>
         <div class="footer-content">
             <div class="footer-section contact">
                 <h4>Contacto</h4>
-                <p>Correo: <a href="m.maldonado.puerto@iescristobaldemonroy.es">m.maldonado.puerto@iescristobaldemonroy.es</a></p>
+                <p>Correo: <a
+                        href="m.maldonado.puerto@iescristobaldemonroy.es">m.maldonado.puerto@iescristobaldemonroy.es</a>
+                </p>
                 <p>Teléfono: <a href="tel:+1234567890">+34 123 456 789</a></p>
             </div>
 
@@ -81,4 +123,5 @@
         </div>
     </footer>
 </body>
+
 </html>

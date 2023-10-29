@@ -54,5 +54,6 @@ navLink.forEach((link) =>
 const btnLuna = document.querySelector("#modes");
 const body = document.querySelector("body");
 btnLuna.addEventListener("click", () => {
+
   body.classList.toggle("claro");
 });

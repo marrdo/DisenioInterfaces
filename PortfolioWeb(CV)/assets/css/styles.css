@@ -13,15 +13,19 @@
   --bg2-color: #394559;
   --resalte-color: #9fef00;
   --fondo-resalte-color: #27382d;
-  --title-enlace-color: #fff;
+  --title-enlace-color: #F5F4F3;
   --letter-color: #b2b8c9;
   --color-linea: #9b2738;
+  --color-github:#F5F4F3;
+  --font-size-h1:
 }
 /*modoClaro*/
 .claro{
-  --letter-color:#111927 ;
-  --bg-color: #b2b8c9;
-  --title-enlace-color: #f8f8f8;
+  --letter-color:#394559 ;
+  --bg-color: #F5F4F3;
+  --bg2-color:#b2b8c9;
+  --title-enlace-color: #111927;
+  --color-github:#b2b8c9;
 }
 
 /*Elminacion de propiedades iniciales y caracteristicas generales*/
@@ -58,7 +62,15 @@ h3 {
   font-weight: var(--bold-font);
   color: var(--title-enlace-color);
 }
-
+h1{
+font-size: 4rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+h3{
+  font-size: 1.8rem;
+}
 /*Suavizar el scroll*/
 html {
   scroll-behavior: smooth;
@@ -91,7 +103,7 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
-  box-shadow: 2px 3px 10px var(--resalte-color);
+  box-shadow: 4px 4px 10px var(--resalte-color);
   border-radius: 2rem;
   width: max-content;
 }
@@ -111,7 +123,7 @@ nav ul {
 }
 
 nav ul li {
-  font-weight: var(--negrita);
+  font-weight: var(--bold-font);
 }
 /*/////////////////////////////////////////////////////*/
 .modes {
@@ -274,7 +286,10 @@ main {
   grid-template-rows: repeat(5, 1fr);
   margin-top: 7rem;
 }
-
+.acerca-de-mi h2{
+padding-left: 3rem;
+padding-top: 4rem;
+}
 /*header section acerca de mi*/
 .head-menu {
   grid-column: 1/4;
@@ -282,7 +297,8 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
+  padding: 2rem;
+  height: min-content;
 }
 
 /*Imagen CV*/
@@ -501,7 +517,6 @@ main {
   text-align: left;
   grid-row: 1/2;
   grid-column: 1/4;
-  font-size: 2.5rem;
   padding-left: 5rem;
 }
 /*organizar iconos de ciclo*/
@@ -544,7 +559,6 @@ main {
 }
 
 .mimismo h3 {
-  font-size: 2.5rem;
   grid-column: 1/4;
   grid-row: 1/2;
   text-align: center;
@@ -581,7 +595,7 @@ main {
 }
 
 .soft-skills th {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
   color: var(--title-enlace-color);
 }
@@ -770,7 +784,7 @@ textarea {
 .socicon {
   width: 2rem;
   height: 2rem;
-
+  
   transform: scale(1);
 }
 .socicon:hover {
@@ -779,7 +793,7 @@ textarea {
   border-radius: 50%;
 }
 .github {
-  background-color: var(--title-enlace-color);
+  background-color: var(--color-github);
   border-radius: 50%;
 }
 
@@ -804,4 +818,53 @@ footer {
   text-align: center; /* Centra el texto en el footer inferior */
   padding: 10px 0; /* Espaciado interno superior e inferior del footer inferior */
   
+}
+
+/*////////////////PROYECTOOS////////////////////////////////////////////////////////////*/
+.proyectos {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.foto-de-proyecto {
+  width: 65%;
+  height: 60%;
+}
+
+.contenedor-de-proyectos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-de-proyectos {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contenedor-de-proyectos {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+.contenedor-de-proyecto p {
+  padding: 0.4rem;
+}
+
+.titulo-de-proyecto {
+  margin-bottom: var(--bottom-margin);
+}
+
+.detalles-de-proyecto {
+  margin-bottom: var(--bottom-margin);
+}
+
+.tarjeta-de-proyecto {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
 }
