@@ -23,7 +23,8 @@ navLink.forEach((link) =>
 /*MODOS CLARO/OSCURO*/
 const btnLuna = document.querySelector("#modes");
 const body = document.querySelector("body");
+const logo = document.querySelector(".logo");
 btnLuna.addEventListener("click", () => {
-
+  logo.classList.toggle("verlogo")
   body.classList.toggle("claro");
 });

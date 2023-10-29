@@ -328,6 +328,11 @@
     justify-content: center;
     flex-direction: column;
   }
+  .acerca-de-mi h2 {
+    font-size: var(--font-size-h3);
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
   .foto-cv {
     display: none;
   }
@@ -368,4 +373,31 @@
 .navegacion.show {
   transform: translateX(0);
 }
+
+.titulo-proyectos{
+  width: 15ch;
 }
+.trabajos{
+  padding: 1rem;
+}
+
+.tittle-proyect{
+  margin-block: 1rem;
+}
+}
+
+
+/*
+fonde degradado oscuro
+#111927
+degradado
+bg-color:#111927
+medio-degradado:#242e3f
+bg2-color:#394559
+
+fondo degradado blanco
+bg-color#f5f4f3
+bg-degradado:#d6d8df
+bg2-color#b2b8c9
+
+*/

@@ -11,13 +11,16 @@
   --bolder-font: 900;
   --bg-color: #111927;
   --bg2-color: #394559;
+  --bg-degradado:#242e3f;
   --resalte-color: #9fef00;
   --fondo-resalte-color: #27382d;
   --title-enlace-color: #F5F4F3;
   --letter-color: #b2b8c9;
   --color-linea: #9b2738;
   --color-github:#F5F4F3;
-  --font-size-h1:
+  --font-size-h1:4rem;
+  --font-size-h2:2.5rem;
+  --font-size-h3:1.8rem;
 }
 /*modoClaro*/
 .claro{
@@ -26,6 +29,7 @@
   --bg2-color:#b2b8c9;
   --title-enlace-color: #111927;
   --color-github:#b2b8c9;
+  --bg-degradado:#d6d8df;
 }
 
 /*Elminacion de propiedades iniciales y caracteristicas generales*/
@@ -63,13 +67,13 @@ h3 {
   color: var(--title-enlace-color);
 }
 h1{
-font-size: 4rem;
+font-size: var(--font-size-h1);
 }
 h2{
-  font-size: 2.5rem;
+  font-size: var(--font-size-h2);
 }
 h3{
-  font-size: 1.8rem;
+  font-size: var(--font-size-h3);
 }
 /*Suavizar el scroll*/
 html {
@@ -91,6 +95,10 @@ html {
 /*LOGO/////////////////////////////////////////////*/
 .logo {
   margin-left: 3.2rem;
+}
+.verlogo{
+  background-color: var(--fondo-resalte-color);
+  border-radius: 5rem;
 }
 .logo img {
   width: 11rem;
@@ -761,6 +769,9 @@ textarea {
   font-weight: var(--bold-font);
   transition: all 0.7s ease-in-out;
   transform: scale(0.8);
+  & > a{
+    color: var(--resalte-color);
+  }
 }
 .submit-btn:hover {
   background-color: var(--resalte-color);
@@ -768,6 +779,9 @@ textarea {
   cursor: pointer;
   color: var(--fondo-resalte-color);
   box-shadow: 2px 2px 10px var(--resalte-color);
+  & > a{
+    color: var(--fondo-resalte-color);
+  }
 }
 
 /*////////////////ICONOS REDES SOCIALES///////////////////////////////////////////////*/
@@ -798,73 +812,73 @@ textarea {
 }
 
 footer {
-  background-color: var(--bg-color); /* Fondo del footer */
-  color: var(--letter-color); /* Color del texto */
-  padding: 20px 0; /* Espaciado interno superior e inferior */
-
-  /* Añade sombra para dar profundidad */
-  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+  background: rgb(17,25,39);
+  background: linear-gradient(180deg, var(--bg-color) 0%, var(--bg-degradado) 40%, var(--bg2-color) 80%); 
+  color: var(--letter-color); 
+  padding: 1.1rem 0;
+  margin-top: 1.3rem;
 }
 
 .footer-content {
-  display: flex; /* Para alinear los elementos en fila */
-  justify-content: space-between; /* Para espaciar los elementos */
+  display: flex; 
+  justify-content: space-between;
   flex-direction: column;
-  width: max-content; /* Ancho máximo del contenido del footer */
-  margin: 0 auto; /* Centra el contenido horizontalmente */
+  width: max-content; 
+  margin: 0 auto; 
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
+
 .footer-bottom {
-  text-align: center; /* Centra el texto en el footer inferior */
-  padding: 10px 0; /* Espaciado interno superior e inferior del footer inferior */
+  text-align: center;
+  padding: 1.2rem 0;
   
 }
 
 /*////////////////PROYECTOOS////////////////////////////////////////////////////////////*/
-.proyectos {
-  background-color: var(--bg-color);
-  padding: 32px 0;
-  margin-top: 2rem;
-}
 
-.foto-de-proyecto {
-  width: 65%;
-  height: 60%;
-}
-
-.contenedor-de-proyectos {
+.proyectos{
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+}
+.titulo-proyec{
+  padding: 2rem;
+}
+.trabajos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.titulo-de-proyectos {
-  text-align: center;
-  margin-bottom: 1rem;
+.card-proyecto{
+  max-width: fit-content;
+  padding: 2rem;
 }
 
-.contenedor-de-proyectos {
-  text-align: center;
-  width: 21.875rem;
-  padding: 1rem;
+.card-proyecto img {
+  width: 400px;
+  height: 500px;
+  border-radius: 2rem;
+}
+.tittle-proyect{
+  color: var(--letter-color);
+  font-size: 1.5rem;
+  font-family: var(--font-family-title);
+  padding: .5rem;
+}
+.explicacion{
+  padding: .5rem;
+  width: 40ch;
+  color: var(--letter-color);
 }
 
-.contenedor-de-proyecto p {
-  padding: 0.4rem;
-}
-
-.titulo-de-proyecto {
-  margin-bottom: var(--bottom-margin);
-}
-
-.detalles-de-proyecto {
-  margin-bottom: var(--bottom-margin);
-}
-
-.tarjeta-de-proyecto {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
-  margin: 10px;
+.ver-proyec{
+  width: fit-content;
 }
