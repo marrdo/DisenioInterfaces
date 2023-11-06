@@ -18,9 +18,11 @@
   --letter-color: #b2b8c9;
   --color-linea: #9b2738;
   --color-github:#F5F4F3;
+  --bg-color-nav:#111927;
   --font-size-h1:4rem;
   --font-size-h2:2.5rem;
   --font-size-h3:1.8rem;
+
 }
 /*modoClaro*/
 .claro{
@@ -30,6 +32,7 @@
   --title-enlace-color: #111927;
   --color-github:#b2b8c9;
   --bg-degradado:#d6d8df;
+  --bg-color-nav:#b2b8c9;
 }
 
 /*Elminacion de propiedades iniciales y caracteristicas generales*/
@@ -110,7 +113,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-nav);
   box-shadow: 4px 4px 10px var(--resalte-color);
   border-radius: 2rem;
   width: max-content;
@@ -708,9 +711,39 @@ padding-top: 4rem;
   background-color: var(--bg2-color);
   border-radius: 3rem;
   height: max-content;
-  
   margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.ir-proyectos h2{
+  margin-block: 2rem;
+  padding: 1rem;
+}
+
+.ir-proyectos figure{
+  margin-block: 2rem;
+}
+
+.ir-proyectos img{
+  border-radius: 2rem;
+  border: outset 3px var(--resalte-color);
+}
+
+.ir-proyectos figcaption{
+text-align: center;
+padding: .3rem;
+font-size: 1rem;
+color: var(--letter-color);
+}
+.ir-proyectos a {
+margin-block: 1rem;
+font-size: 1.4rem;
+}
+
+
 
 /*/////CONTACTOO////////////////////////////////////////////////////////////////////*/
 .contacto {
@@ -876,6 +909,7 @@ footer {
   width: 400px;
   height: 500px;
   border-radius: 2rem;
+  border: outset 3px var(--resalte-color);
 }
 .tittle-proyect{
   color: var(--letter-color);
