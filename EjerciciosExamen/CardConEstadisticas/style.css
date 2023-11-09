@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900);
+
+:root {
+  --deep: hsl(233, 47%, 7%);
+  --deep-card: hsl(244, 38%, 16%);
+  --violet: hsl(277, 64%, 61%);
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-family-1: Inter, sans-serif;
+  --font-family-2: "Lexend Deca", sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  main {
+    background-color: var(--deep-card);
+    display: flex;
+    width: fit-content;
+    margin-top: 20rem;
+    border-radius: 5px;
+    justify-content: space-between;
+  }
+
+  .informacion {
+    padding: 3rem;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-bold);
+    font-size: 3rem;
+    width: 18ch;
+    color: #fff;
+  }
+  h1 span {
+    color: var(--violet);
+  }
+  .informacion p {
+    width: 40ch;
+    color: #fff;
+    opacity: 0.75;
+    font-family: var(--font-family-1);
+  }
+
+  figure {
+    display: block;
+    border-radius: 5px;
+  }
+  figure img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+    filter: hue-rotate(32deg);
+
+  }
+  .datos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+
+  .datos h3 {
+    font-size: 2rem;
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-bold);
+    color: #fff;
+  }
+  .datos p {
+    width: fit-content;
+    opacity: 0.6;
+  }
+
+
+@media screen and (max-width: 475px) {
+    main{
+        flex-direction: column-reverse;
+        margin: 2rem;
+        width: 300px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .informacion{
+        margin-top: 1.5rem;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    h1{
+        font-size: 2rem;
+        width: 90%;
+        text-align: center;
+    }
+    .datos{
+        flex-direction: column;
+    }
+
+    .informacion p{
+        text-align: center;
+        width: 100%;
+    }
+
+    figure{
+        width: fit-content;
+        height: 300px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    figure img{
+        border-radius: 5px 5px 0 0;
+    }
+
+    .datos {
+    margin-top: 1rem;
+    gap: 2rem;
+    }
+    .datos h3,.datos  p{
+        text-align: center;
+    }
+}
