@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+  color: whitesmoke;
+}
+
+.sidebar {
+  height: 100%;
+  padding-top: 3rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  background-color: #040b14;
+}
+
+.profile {
+  border-radius: 50%;
+  margin-top: 4rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  background-color: goldenrod;
+  color: whitesmoke;
+}
+
+.sidebar ul {
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem;
+  border: dotted 0.4rem whitesmoke;
+  margin-top: 1.5rem;
+}
+
+.sidebar li {
+  margin-left: 1rem;
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+.sidebar a {
+  color: goldenrod;
+  text-decoration: none;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+  background-image: url(pexels.jpg);
+  background-size: cover;
+  background-color: greenyellow;/*black*/
+  background-blend-mode: lighten;/*Luminiosity*/
+}
+
+.main h1{
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 90%;
+    color: whitesmoke;
+}
+
+.main h2{
+    margin-block: 2rem;
+    color: goldenrod;
+}
+.main h3{
+    margin-block: 1.5rem;   
+    border-bottom: dotted ;
+    color: goldenrod;
+}
+
+p{
+    margin-block: 1rem;
+}
